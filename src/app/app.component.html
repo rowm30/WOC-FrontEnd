@@ -4,10 +4,11 @@
 	<title>Seven Field Form</title>
 </head>
 <body>
+  <!-- {{constituency|json}} -->
 	<h1>Constituency Form</h1>
 	<form (ngSubmit)="formSubmit()">
 		<label for="constituency">Constituency:</label>
-		<input type="text" id="constituency" name="constituency"><br><br>
+		<input type="text" id="constituency" name="constituency" [(ngModel)]="constituency.constituency"><br><br>
 
 		
 
@@ -15,16 +16,16 @@
 		<input type="text" id="electedIndividual" name="electedIndividual" [(ngModel)]="constituency.electedIndividual"><br><br>
 
 		<label for="Party">Party:</label>
-		<input type="text" id="Party" name="Party"><br><br>
+		<input type="text" id="Party" name="Party" [(ngModel)]="constituency.Party"><br><br>
 
 		<label for="Age">Age:</label>
-		<input type="number" id="Age" name="Age"><br><br>
+		<input type="number" id="Age" name="Age" [(ngModel)]="constituency.Age"><br><br>
 
 		<label for="Gender">Gender:</label>
-		<input type="text" id="Gender" name="Gender"><br><br>
+		<input type="text" id="Gender" name="Gender" [(ngModel)]="constituency.Gender"><br><br>
 
 		<label for="score">Score:</label>
-		<input type="text" id="score" name="score"><br><br>
+		<input type="text" id="score" name="score" [(ngModel)]="constituency.score"><br><br>
 
 		<input type="submit" value="Submit">
 	</form>
