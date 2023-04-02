@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WOCFrontEnd';
+
+  public constituency ={
+    constituency:'',
+    electedIndividual:'',
+    Party:'',
+    Age:'',
+    Gender:'',
+    score:''
+  }
+  formSubmit()
+  {
+    alert("submit");
+  }
 }

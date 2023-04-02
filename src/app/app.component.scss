@@ -1,0 +1,57 @@
+/* Apply a reset to remove default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply some basic styles to the form */
+  form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style the form header */
+  form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Style the form labels */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the form inputs */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form submit button */
+  form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Add some hover effects to the form submit button */
+  form input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
